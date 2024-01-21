@@ -46,10 +46,6 @@ regd_users.post("/login", (req, res) => {
     }
 });
 
-regd_users.get("/", (req, res) => {
-    res.send(users);
-})
-
 // Add a book review
 regd_users.put("/auth/review/:isbn", (req, res) => {
     const isbn = req.params.isbn;
